@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Order</title>
+</head>
+<body>
+    <h1>Update Order</h1>
+    <form method="POST">
+        <label for="status">Status:</label>
+        <input type="text" name="status" id="status" value="{{ order.status }}" required>
+        <label for="assigned_to">Assigned To:</label>
+        <input type="text" name="assigned_to" id="assigned_to" value="{{ order.assigned_to }}">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
